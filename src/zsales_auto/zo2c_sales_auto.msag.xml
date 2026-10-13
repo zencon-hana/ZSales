@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZO2C_SALES_AUTO</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>MESSAGE CLASS FOR SALES AUTO</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZO2C_SALES_AUTO</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1&amp;2&amp;3&amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZO2C_SALES_AUTO</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>No data found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZO2C_SALES_AUTO</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Tax code percentage not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZO2C_SALES_AUTO</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Available qty @1 is less than required quantity @2.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

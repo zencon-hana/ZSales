@@ -1,0 +1,53 @@
+managed implementation in class zcl_bp_c_sale_auto unique;
+strict ( 2 );
+define behavior for ZC_SALE_AUTO //alias <alias_name>
+//persistent table zsales_auto_inp
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //  create;
+  update;
+  //  delete;
+  field ( readonly ) SalesOrder, SalesOrderItem, OutboundDelivery, OutboundDeliveryItem, BillingDocument, BillingDocumentItem,
+  MaterialByCustomer,
+  Material,
+  MaterialDescription,
+  ShipToParty,
+  ShipToPartyName,
+  SoldToParty,
+  SoldToPartyName,
+  Batch,
+  ShippingPoint,
+  ScheduleLineOrderQuantity,
+  OrderQuantityUnit,
+  DeliveredQuantityInBaseUnit,
+  BaseUnit,
+  SalesOrganization,
+  DistributionChannel,
+  Division,
+  Plant,
+  StorageLocation,
+  StorageLocationName,
+  DeliveryDate,
+  MaterialCurrentStock,
+  OrderQuantity,
+  NetAmount,
+  TransactionCurrency,
+  NetPriceAmount,
+  CGST_rate,
+  CGST_value,
+  SGST_rate,
+  SGST_value,
+  IGST_rate,
+  IGST_value;
+
+  field ( mandatory ) Quantity, QuantityUnit, VehicleNo; //ForwadingAgent, TransporterName, DriverLicenceNo, DriverName;
+
+  action ( precheck ) CreateSuccessorDocs result [1] $self;
+  action GenerateEinvoice;
+  action GenerateEwayBill;
+//  action ( features : instance ) DownloadEinvoice result [0..1] ZEWAYPAYLOADDWNLD;
+//  action ( features : instance ) CancelEinvoice deep parameter Z_EINV_CANCEL_ST;
+}

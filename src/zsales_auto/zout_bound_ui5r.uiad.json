@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Outbound Automation"
+  },
+  "ui5AppDetails": {
+    "appId": "zoutbound.zoutbound"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_25CDDE362153EE2401656671482C7F5B9C2E6D82_TM",
+    "semanticObject": "ZOUT_BOUND",
+    "action": "TRANSACTION",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_25CDDE362153EE2401656671482C7F5B9C2E6D82_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Outbound Automation"
+      }
+    }
+  ]
+}

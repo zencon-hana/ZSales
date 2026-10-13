@@ -1,0 +1,49 @@
+managed implementation in class ZBP_R_MAT_OBD unique;
+strict ( 2 );
+//with draft;
+extensible;
+define behavior for ZR_MAT_OBD alias ZrMatObd
+persistent table ZMAT_OBD
+extensible
+//draft table ZMAT_OBD_D
+etag master LocalLastChangedAt
+lock master //total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   Matnr;
+
+  field ( readonly )
+   Creteduser,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Matnr;
+
+
+  create;
+  update;
+  delete;
+
+//  draft action Activate optimized;
+//  draft action Discard;
+//  draft action Edit;
+//  draft action Resume;
+//  draft determine action Prepare;
+
+  mapping for ZMAT_OBD corresponding extensible
+  {
+    Matnr = matnr;
+    Maktx = maktx;
+    UnitPer = unit_per;
+    MaxQty = max_qty;
+    Meins = meins;
+    Creteduser = creteduser;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+}

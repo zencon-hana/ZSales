@@ -1,0 +1,122 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Matnr'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Matnr'
+annotate view ZC_MAT_OBD with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Matnr;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Maktx;
+  
+  @EndUserText.label: 'UnitPer'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'UnitPer'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'UnitPer'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  UnitPer;
+  
+  @EndUserText.label: 'MaxQty'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'MaxQty'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'MaxQty'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  MaxQty;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Creteduser;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LocalLastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 90 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  _BaseEntity;
+}

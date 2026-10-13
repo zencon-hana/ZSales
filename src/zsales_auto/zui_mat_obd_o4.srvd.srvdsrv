@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_MAT_OBD'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_MAT_OBD'
+  }
+}
+define service ZUI_MAT_OBD_O4 provider contracts odata_v4_ui {
+  expose ZC_MAT_OBD;
+}

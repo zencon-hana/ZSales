@@ -1,0 +1,13 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_SALE_AUTO_P //alias <alias_name>
+{
+//  use create;
+  use update;
+  use action CreateSuccessorDocs;
+  use action GenerateEinvoice;
+  use action GenerateEwayBill;
+//  use action CancelEinvoice;
+//  use action DownloadEinvoice;
+}

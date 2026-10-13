@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service defintion for sales auto'
+define service ZSD_SALES_AUTO {
+  expose ZC_SALE_AUTO_P;
+  expose I_OutboundDelivery;
+  expose I_BillingDocument;
+  expose C_BOMMaterialVH;
+}

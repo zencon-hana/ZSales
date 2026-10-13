@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_MAT_OBD'
+@MappingRole: true
+define role ZR_MAT_OBD {
+  grant select on ZR_MAT_OBD
+  where TRUE;
+}
